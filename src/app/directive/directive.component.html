@@ -1,1 +1,18 @@
-<h1>Hi Directive Demo </h1> 
+<div >
+    <h1>Hi Directive Demo </h1> 
+    <ul *ngFor="let items of arr">
+        <li>{{items}}</li>
+    </ul>
+    <hr>
+
+    <input type="text" #fruitname>
+
+    <input type="submit"
+     value="Add Fruit"
+     (click)="addFruit(fruitname.value)"
+     >
+    <ul *ngFor="let fruits of fruit">
+        <li>{{fruits}}</li>
+    </ul>
+
+</div>

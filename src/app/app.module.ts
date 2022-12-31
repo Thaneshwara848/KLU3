@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { BindingComponent } from './binding/binding.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { DirectiveComponent } from './directive/directive.component';
     LoginComponent,
     SignupComponent,
     BindingComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
