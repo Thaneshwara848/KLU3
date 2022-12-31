@@ -1,9 +1,38 @@
-<h1> Hi Welcome to Angualr App </h1>
 
-echo "# KLU3" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Thaneshwara848/KLU3.git
-git push -u origin main
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">KL university </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="home">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Department <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">COmputers </a></li>
+            <li><a href="#">mech </a></li>
+            <li><a href="#">CIvil </a></li>
+          </ul>
+        </li>
+        <li><a routerLink="galary">Galary</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a routerLink="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<router-outlet></router-outlet>
+  <!-- ===========================
+
+  3 steps 
+
+1 ) href="#" : routerLink=""
+<router-outlet></router-outlet>
+
+{
+    path:'login',
+    component"LoginCompoent"
+} -->
+
+
