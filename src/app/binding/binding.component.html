@@ -1,0 +1,31 @@
+<div style="text-align: center;">
+    <h1> Hi Data Binding </h1>
+    Name : <input type="text" #username>
+    <input type="submit" value="CLICK"
+     (click)="abc(username.value)">
+        <br>
+     {{myname}}<br>
+</div>
+<div style="text-align: center;">
+    <h1> CACL </h1>
+    Principle   : <input type="text" #p><br> 
+    TIME        : <input type="text" #t><br>
+    
+    <select (change)="roi($event)">
+        <option>Loan Type  </option>
+        <option value="car">CAR </option>
+        <option value="home">HOME </option>
+        <option value="edu">EDU  </option>
+        <option value="personal">Personal </option>
+    </select><br>
+    ROI: <input type="text" disabled value={{intrest}}><br>
+    Total: <input type="text" value={{total}}><br>
+    EMI :   <input type="text" value={{emi}}><br>
+<br>
+    <input type="submit" value="Calulate"
+    (click)="cal(p.value,t.value)"> 
+    
+</div>
+<div style="text-align:center ;">
+
+           
