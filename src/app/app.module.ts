@@ -11,6 +11,7 @@ import { BindingComponent } from './binding/binding.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
+import { ReactivefromsComponent } from './reactivefroms/reactivefroms.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     BindingComponent,
     DirectiveComponent,
-    FormsComponent
+    FormsComponent,
+    ReactivefromsComponent
   ],
   imports: [
     BrowserModule,
