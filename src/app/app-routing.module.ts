@@ -6,10 +6,15 @@ import { FormsComponent } from './forms/forms.component';
 import { GalaryComponent } from './galary/galary.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { PipeComponent } from './pipe/pipe.component';
 import { ReactivefromsComponent } from './reactivefroms/reactivefroms.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
+  {
+    path:'pipe',
+    component:PipeComponent
+  },
   {
     path:'Reactive',
     component:ReactivefromsComponent

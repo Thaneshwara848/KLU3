@@ -12,6 +12,7 @@ import { DirectiveComponent } from './directive/directive.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
 import { ReactivefromsComponent } from './reactivefroms/reactivefroms.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactivefromsComponent } from './reactivefroms/reactivefroms.component'
     BindingComponent,
     DirectiveComponent,
     FormsComponent,
-    ReactivefromsComponent
+    ReactivefromsComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
